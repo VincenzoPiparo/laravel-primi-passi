@@ -7,15 +7,21 @@
     <title>Document</title>
 </head>
 <body>
+    {{-- STAMPIAMO IN PAGINA IN MODO STATICO --}}
     <h1>Welcome Piparo's Family</h1>
 
      <h2>{{ $name }} {{ $lastname }} </h2>
 
+     {{-- STAMPIAMO IN PAGINA DINAMICAMENTE --}}
      <div>
         @foreach ($parents as $parent)
             {{ $parent }},
         @endforeach
      </div>
 
+
+     {{-- BONUS --}}
+     <a href="{{ route('bonus') }}">Go Menù</a>
+     <a href="{{ route('bonus') }}">Go Second Menù</a>
 </body>
 </html>

@@ -23,6 +23,13 @@ Route::get('/', function () {
             'Cettina Cardinale'
         ]
     ];
-
     return view('helloWord', $data);
-});
+})->name('homepage');
+
+Route::get('/bonus-in', function () {
+    return view('bonus');
+})->name('bonus');
+
+Route::get('/menu-in', function () {
+    return view('menu');
+})->name('menu');
