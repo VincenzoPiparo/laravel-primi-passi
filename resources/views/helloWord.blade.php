@@ -9,6 +9,13 @@
 <body>
     <h1>Welcome Piparo's Family</h1>
 
-    
+     <h2>{{ $name }} {{ $lastname }} </h2>
+
+     <div>
+        @foreach ($parents as $parent)
+            {{ $parent }},
+        @endforeach
+     </div>
+
 </body>
 </html>

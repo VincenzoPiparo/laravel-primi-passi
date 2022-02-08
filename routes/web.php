@@ -14,15 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    // $data = [
-    //    'name' => 'Vincenzo',
-    //    'lastname' => 'Piparo',
-    //     'parents' => [
-    //         'Liborio Piparo',
-    //         'Andrea Piporo',
-    //         'Cettina Cardinale'
-    //     ]
-    // ];
+    $data = [
+       'name' => 'Vincenzo',
+       'lastname' => 'Piparo',
+        'parents' => [
+            'Liborio Piparo',
+            'Andrea Piporo',
+            'Cettina Cardinale'
+        ]
+    ];
 
-    return view('helloWord');
+    return view('helloWord', $data);
 });
